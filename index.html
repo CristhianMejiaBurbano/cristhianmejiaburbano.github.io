@@ -5,7 +5,7 @@
   <title>Cristhian Mejía | QA Engineer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Fuente futurista -->
+  <!-- Fuentes -->
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
   <style>
@@ -17,22 +17,22 @@
 
     body {
       font-family: 'Inter', sans-serif;
-      background: linear-gradient(135deg, #020617, #0f172a);
-      color: #e2e8f0;
+      background: linear-gradient(135deg, #0f172a, #020617);
+      color: #f1f5f9;
       overflow-x: hidden;
     }
 
-    /* Glow background animation */
+    /* Glow elegante */
     body::before {
       content: "";
       position: fixed;
       width: 600px;
       height: 600px;
-      background: radial-gradient(circle, #38bdf8, transparent);
+      background: radial-gradient(circle, #f97316, transparent);
       top: -200px;
       left: -200px;
       filter: blur(120px);
-      opacity: 0.3;
+      opacity: 0.2;
       animation: float 8s infinite ease-in-out alternate;
       z-index: -1;
     }
@@ -50,8 +50,8 @@
     h1 {
       font-family: 'Orbitron', sans-serif;
       font-size: 2.8rem;
-      color: #38bdf8;
-      text-shadow: 0 0 10px #38bdf8;
+      color: #f97316;
+      text-shadow: 0 0 10px rgba(249, 115, 22, 0.6);
     }
 
     header p {
@@ -69,7 +69,7 @@
     .card {
       background: rgba(30, 41, 59, 0.6);
       backdrop-filter: blur(10px);
-      border: 1px solid rgba(56, 189, 248, 0.2);
+      border: 1px solid rgba(249, 115, 22, 0.2);
       border-radius: 15px;
       padding: 25px;
       margin-top: 25px;
@@ -78,11 +78,11 @@
 
     .card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 0 20px rgba(56, 189, 248, 0.3);
+      box-shadow: 0 0 20px rgba(249, 115, 22, 0.3);
     }
 
     h2 {
-      color: #38bdf8;
+      color: #f97316;
       margin-bottom: 10px;
       font-family: 'Orbitron', sans-serif;
     }
@@ -92,18 +92,22 @@
     }
 
     li {
-      margin-bottom: 5px;
+      margin-bottom: 6px;
     }
 
     .project {
       margin-top: 15px;
     }
 
+    .project p {
+      margin-bottom: 10px;
+    }
+
     .tag {
       display: inline-block;
-      background: #38bdf8;
+      background: #f97316;
       color: #020617;
-      padding: 3px 10px;
+      padding: 4px 10px;
       border-radius: 8px;
       font-size: 0.8rem;
       margin-right: 5px;
@@ -111,13 +115,13 @@
     }
 
     a {
-      color: #38bdf8;
+      color: #fb923c;
       text-decoration: none;
       font-weight: 600;
     }
 
     a:hover {
-      text-shadow: 0 0 5px #38bdf8;
+      text-shadow: 0 0 5px rgba(251, 146, 60, 0.8);
     }
 
     footer {
@@ -140,6 +144,7 @@
 
   <section class="card">
     <h2>Sobre mí</h2>
+    
     <p>
       QA Engineer Junior en formación, enfocado en asegurar la calidad y confiabilidad de productos digitales desde una perspectiva analítica y orientada al detalle. Experiencia práctica en diseño y ejecución de pruebas funcionales, API testing con Postman y gestión de defectos en Jira.
       Trabajo con metodologías Agile, análisis de requisitos y validación de datos con SQL, buscando siempre entender el comportamiento real del sistema más allá de lo esperado.
@@ -175,29 +180,32 @@
 
     <div class="project">
       <h3>Urban Routes – Test Design</h3>
-      <ul>
-         <p><strong>Qué hice:</strong> Analicé requisitos de la funcionalidad de compartir automóvil, identificando zonas grises y posibles inconsistencias. Diseñé casos de prueba aplicando clases de equivalencia y valores límite, además de modelar la funcionalidad mediante mapas mentales y diagramas de flujo para entender el comportamiento del sistema.</p>
-         <p><strong>Qué logré:</strong> Logré estructurar pruebas claras y completas a partir de requisitos incompletos, anticipando escenarios críticos y fortaleciendo la cobertura de pruebas desde etapas tempranas del desarrollo.</p>
-         <p><strong>Mi enfoque:</strong> Me gusta ir más allá de lo evidente, cuestionar los requisitos y buscar posibles fallos antes de que ocurran, aportando una visión preventiva a la calidad del software.</p>
-      </ul>
+      </div>
+      <p><strong>Qué hice:</strong> Analicé requisitos de la funcionalidad de compartir automóvil, identificando zonas grises y posibles inconsistencias. Diseñé casos de prueba aplicando clases de equivalencia y valores límite, además de modelar la funcionalidad mediante mapas mentales y diagramas de flujo.</p>
+      <p><strong>Qué logré:</strong> Estructuré pruebas claras y completas a partir de requisitos incompletos, anticipando escenarios críticos y fortaleciendo la cobertura de pruebas desde etapas tempranas.</p>
+      <p><strong>Mi enfoque:</strong> Me gusta cuestionar los requisitos y buscar fallos antes de que ocurran, aportando una visión preventiva a la calidad del software.</p>
     </div>
 
     <div class="project">
       <h3>Urban Grocers – API Testing</h3>
-      <ul>
-         <p><strong>Qué hice:</strong> Diseñé y ejecuté pruebas para endpoints relacionados con la gestión de kits y servicios de entrega. Validé parámetros, estructuras JSON y reglas de negocio como límites de productos, utilizando Postman para ejecutar solicitudes y analizar respuestas HTTP. Documenté errores en Jira con detalle.</p>
-         <p><strong>Qué logré:</strong> Diseñé y ejecuté más de 30 test cases utilizando Postman, incluyendo escenarios positivos, negativos y edge cases. Validé requests y responses de APIs REST, analizando estructuras JSON y comportamientos del sistema.</p>
-         <p><strong>Mi enfoque:</strong> Disfruto entender cómo funcionan las cosas por detrás, validar la lógica del sistema y asegurar que los datos sean coherentes, porque ahí es donde suelen esconderse los errores más críticos.</p>
-      </ul>
+      </div>
+      <p><strong>Qué hice:</strong> Diseñé y ejecuté pruebas para endpoints de kits y servicios de entrega. Validé parámetros, estructuras JSON y reglas de negocio utilizando Postman, documentando errores en Jira.</p>
+      <p><strong>Qué logré:</strong> Ejecuté más de 30 test cases incluyendo escenarios positivos, negativos y edge cases, validando comportamiento del sistema y consistencia de datos.</p>
+      <p><strong>Mi enfoque:</strong> Disfruto validar la lógica interna del sistema y asegurar coherencia en los datos, donde suelen aparecer los errores más críticos.</p>
     </div>
 
   </section>
 
-  <section class="card">
+  <section class="card" style="text-align: center;">
     <h2>Contacto</h2>
-    <p>
-      <a href="https://www.linkedin.com/in/cristhian-mejia-burbano/" target="_blank">
-      LinkedIn
+
+    <p style="margin-top:10px;">
+      📧 <a href="mailto:cmejiaburbano@gmail.com">cmejiaburbano@gmail.com</a>
+    </p>
+
+    <p style="margin-top:10px;">
+      🔗 <a href="https://www.linkedin.com/in/cristhian-mejia-burbano/" target="_blank">
+        LinkedIn
       </a>
     </p>
   </section>
